@@ -197,7 +197,7 @@ body {
 .mission-img-first {
   position: relative;
   left: 45vw;
-  bottom: 64vh;
+  bottom: 61vh;
   z-index: 1;
   width: 42vw;
 }
@@ -205,7 +205,7 @@ body {
 .mission-img-second {
   position: relative;
   left: 10vw;
-  bottom: 62vh;
+  bottom: 59vh;
   z-index: 2;
   width: 31.53vw;
 }
