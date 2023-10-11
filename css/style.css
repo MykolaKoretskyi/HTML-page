@@ -132,14 +132,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 41%;
+  max-width: 41%;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 .h4-title {
   font-size: 2.88em;
   letter-spacing: -0.92px;
   text-transform: uppercase;
+  word-break: break-all;
+  width: 90%;
 }
 
 .h5-slogan {
@@ -154,6 +157,10 @@ body {
 
 .slogan-img {
   border-radius: 1vw;
+  max-width: 40.62vw;
+  max-height: 53vh;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mission {
