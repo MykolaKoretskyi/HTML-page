@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
+:root {
+  --brand-color: #7ae5fd;
+  --background-color: #fff;
+  --background-blue-color: #f1fdff;
+  --background-footer-color: #f9fadf;
+  --font-color: #000;
+  --second-font-color: #73a6b1;
+}
+
 body {
+  color: var(--font-color);
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .header-section {
@@ -15,20 +28,11 @@ body {
   height: 4.06em;
 }
 
-.navigation {
+.navigation-list {
   width: 45.7vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.navigation-list {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-item-center {
@@ -37,22 +41,16 @@ body {
 }
 
 .nav-item {
-  color: #000;
   font-size: 1.125em;
-  font-style: normal;
-  font-weight: 400;
   line-height: 0.96;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .nav-button {
-  text-align: center;
-  font-family: Montserrat;
   text-transform: uppercase;
-  margin: 0;
   padding: 1.31em 2.19em 1.31em 2.19em;
-  background-color: #7ae5fd;
+  background-color: var(--brand-color);
   border-radius: 10em;
   border: none;
 }
@@ -61,41 +59,35 @@ body {
   background-image: url(../images/1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   height: 100vh;
-}
-
-.main-description {
-  padding: 25.25vh 45.05% 0 7.29%;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: center;
+  padding-left: 7.29%;
 }
 
 .h1-main-section {
-  color: #fff;
+  color: var(--background-color);
   font-size: 4.06em;
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -1.3px;
   text-transform: uppercase;
-  margin: 0;
-  width: 47.66%;
+  width: 40%;
 }
 
 .h3-main-section {
   font-size: 1.25em;
-  line-height: 1.2;
-  font-weight: 400;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 62%;
+  width: 30%;
 }
 
 .button-main-img-section {
-  text-align: center;
-  font-family: Montserrat;
   text-transform: uppercase;
-  margin: 0;
   padding: 1.31em 2.19em 1.31em 2.19em;
-  background-color: #fff;
+  background-color: var(--background-color);
   border: none;
   border-radius: 10em;
 }
@@ -107,8 +99,6 @@ body {
 
 .h2-description-section {
   font-size: 3.75em;
-  font-weight: 400;
-  line-height: 1.2;
   letter-spacing: -1.2px;
   text-transform: uppercase;
   margin: 0 0 0.25em 0;
@@ -116,19 +106,12 @@ body {
 
 .h3-description-section {
   font-size: 1.69em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
   margin: 0 0 0.37em 0;
 }
 
 .h4-description-section {
-  color: #73a6b1;
+  color: var(--second-font-color);
   font-size: 1.25em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 0;
 }
 
 .regular-section {
@@ -137,7 +120,7 @@ body {
 }
 
 .regular-article {
-  background-color: #f1fdff;
+  background-color: var(--background-blue-color);
   margin: 0 0 6.25vh 0;
   border-radius: 1vw;
   padding: 9.43vh 5.28%;
@@ -149,33 +132,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: last baseline;
   width: 41%;
   text-align: left;
 }
 
 .h4-title {
   font-size: 2.88em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
   letter-spacing: -0.92px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .h5-slogan {
   font-size: 1.25em;
-  font-style: normal;
   font-weight: 600;
-  line-height: 1.2;
   margin: 0.5em 0 0.5em 0;
 }
 
 .description {
   font-size: 1.25em;
-  line-height: 1.2;
-  margin: 0;
 }
 
 .slogan-img {
@@ -189,7 +163,7 @@ body {
 
 .article-mission {
   width: 86vw;
-  background-color: #f1fdff;
+  background-color: var(--background-blue-color);
   height: 39vh;
   position: relative;
 }
@@ -197,26 +171,22 @@ body {
 .mission-img-first {
   position: relative;
   left: 45vw;
-  bottom: 61vh;
-  z-index: 1;
+  bottom: 58vh;
   width: 42vw;
 }
 
 .mission-img-second {
   position: relative;
   left: 10vw;
-  bottom: 59vh;
-  z-index: 2;
+  bottom: 54vh;
   width: 31.53vw;
 }
 
 .mission-description {
   position: relative;
   top: 32%;
-  z-index: 3;
   font-size: 1.7em;
-  line-height: 1.2;
-  width: 38.75vw;
+  width: 36vw;
   margin-left: 4.31vw;
 }
 
@@ -231,19 +201,15 @@ body {
 
 .h3-please-support {
   font-size: 3.75em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
   letter-spacing: -1.2px;
   text-transform: uppercase;
   margin: 0 0 0.25em 0;
 }
 
 .description-please-support {
-  color: #73a6b1;
+  color: var(--second-font-color);
   text-align: center;
   font-size: 1.25em;
-  line-height: 1.2;
   width: 46%;
   margin: 0 0 2.5em 0;
 }
@@ -251,33 +217,25 @@ body {
 .our-goal {
   text-align: center;
   font-size: 1.69em;
-  line-height: 1.2;
   margin: 0 0 0.63em 0;
 }
 
 .list-goal {
-  list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0;
 }
 
 .goal-item {
   text-align: center;
   font-size: 3.75em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
   letter-spacing: -1.2px;
   text-transform: uppercase;
   padding-right: 0.4em;
   padding-left: 0.4em;
-  margin: 0;
 }
 
 .border-item {
-  border-left: 2px solid #9ad2de;
-  border-right: 2px solid #9ad2de;
+  border-left: 2px solid var(--second-font-color);
+  border-right: 2px solid var(--second-font-color);
 }
 
 .goal-button {
@@ -285,7 +243,7 @@ body {
 }
 
 .footer-section {
-  background-color: #f9fadf;
+  background-color: var(--background-footer-color);
   height: 105.5vh;
   padding: 0 4.93% 20vh 4.93%;
 }
@@ -300,9 +258,6 @@ body {
 .h3-footer {
   text-align: center;
   font-size: 3.75em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
   letter-spacing: -1.2px;
   text-transform: uppercase;
   margin-top: 6.25vh;
@@ -320,20 +275,17 @@ body {
 .paragraph-footer {
   width: 58%;
   font-size: 1.25em;
-  line-height: 1.2;
   margin: 0.56em 0 0 0;
 }
 
 .phone-number {
   font-size: 1.25em;
   font-weight: 700;
-  line-height: 1.2;
   margin: 0 0 3.56em 0;
 }
 
 .footer-subscription {
-  margin: 0;
-  background-color: #fff;
+  background-color: var(--background-color);
   display: flex;
   align-items: top;
   justify-content: space-between;
@@ -358,8 +310,8 @@ body {
 
 .subscribtion-description {
   font-size: 1.69em;
-  line-height: 1.2;
   margin-top: 7.5vh;
+  margin-bottom: 4.8vh;
   width: 65%;
 }
 
@@ -368,25 +320,13 @@ body {
   padding: 1em 2.69em;
   border-radius: 10em;
   border: none;
-  background-color: #f9fadf;
+  background-color: var(--background-footer-color);
   margin-bottom: 3.88vh;
   font-size: 1.25em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
 }
 
 .subscription-button {
   padding: 1em 2.69em;
   font-size: 1.125em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
-  text-transform: uppercase;
   width: 34vw;
-  background-color: #7ae5fd;
-  border-radius: 10em;
-  border: none;
-  text-align: center;
-  font-family: Montserrat;
 }
