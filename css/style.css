@@ -302,13 +302,14 @@ a {
 }
 
 .article-contacts {
-  margin-top: 6.25vh;
+  margin-top: 2vh;
   width: 50%;
 }
 
 .icons {
   width: 2.06em;
   height: 2.06em;
+  margin-top: 3em;
 }
 
 .paragraph-footer {
@@ -319,8 +320,7 @@ a {
 
 .phone-number {
   font-size: 1.25em;
-  font-weight: 700;
-  margin: 0 0 3.56em 0;
+  font-weight: 600;
 }
 
 .footer-subscription {
@@ -355,7 +355,6 @@ a {
 
 .subscribtion-description {
   font-size: 1.69em;
-  /* margin-top: 7.5vh; */
   margin-bottom: 4.8vh;
   width: 65%;
 }
@@ -418,20 +417,8 @@ a {
   font-size: 1.6em;
 }
 
-/* .subscribtion-support{
-  padding-top: 0;
-} */
-
 .not-visible {
   visibility: hidden;
-}
-
-.office-item {
-  margin-top: 5vh;
-}
-
-.office-local {
-  font-weight: 600;
 }
 
 .help-img-section {
