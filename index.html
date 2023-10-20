@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Charitable Foundation</title>
   </head>
+
   <body>
     <header class="header-section">
       <img class="logo" src="./images/Subtract.png" alt="Логотип" />
 
       <ul class="navigation-list">
-        <li class="nav-item">Контакти</li>
+        <!-- <li class="nav-item">Контакти</li> -->
+        <a href="contacts.html" class="nav-item">Контакти</a>
+
         <li class="nav-item nav-item-center">Головна</li>
-        <li class="nav-item">Із чим ми допомагаємо</li>
-        <li class="nav-button">Підтримати фонд</li>
+        <!-- <li class="nav-item">Із чим ми допомагаємо</li> -->
+        <a href="ourHelp.html" class="nav-item">Із чим ми допомагаємо</a>
+        <!-- <li class="nav-button">Підтримати фонд</li> -->
+        <a href="toSupport.html" class="nav-button">Підтримати фонд</a>
       </ul>
     </header>
 
@@ -24,7 +29,10 @@
       <h3 class="h3-main-section">
         Ми хочемо допомогти кожному, хто постраждав під час війни
       </h3>
-      <button class="button-main-img-section">Підтримати фонд</button>
+      <!-- <button class="button-main-img-section">Підтримати фонд</button> -->
+      <a href="toSupport.html" class="button-main-img-section"
+        >Підтримати фонд</a
+      >
     </section>
 
     <section class="main-description-section">
@@ -80,13 +88,16 @@
         <article class="regular-article-description">
           <h4 class="h4-title">Робота з дітьми</h4>
           <h5 class="h5-slogan">
-            Зробімо їхнє теперішнє добрим, бо діти — наше майбутнєи
+            Зробімо їхнє теперішнє добрим, бо діти — наше майбутнє
           </h5>
           <p class="description">
-            Ми допомагаємо людям, які постраждали, знайти правильне лікування. У
-            нашому фонді є чотири напрями: фізичної та реабілітаційної медицини,
-            терапевтичний, неврологічний та хірургічний. Ми маємо
-            заклади-партнерів, де швидко та якісно можуть надати допомогу.
+            Ми надаємо психологічну допомогу та індивідуальну гуманітарну
+            підтримку сім'ям, працюємо з громадами й закладами для дітей в межах
+            усієї країни. Ключове завдання – допомогти дитині впоратися з тим,
+            що відбувається навколо, та розвиватись. У нашому пріоритеті надання
+            комплексної психологічної підтримки дитині та сімʼї, повне розуміння
+            їхніх потреб, пропрацювання й робота з подолання в них наслідків
+            війни.
           </p>
         </article>
 
@@ -96,8 +107,8 @@
           alt="Діти готують страви"
         />
       </article>
-
-      <button class="nav-button">Дізнатися більше</button>
+      <a href="moreDetail.html" class="nav-button">Дізнатися більше</a>
+      <!-- <button class="nav-button">Дізнатися більше</button> -->
     </section>
 
     <section class="mission">
@@ -133,7 +144,7 @@
         <li class="goal-item border-item">230</li>
         <li class="goal-item">025</li>
       </ul>
-      <button class="nav-button goal-button">Дізнатися більше</button>
+      <a href="ourGoal.html" class="nav-button button-goal">Дізнатися більше</a>
     </section>
 
     <footer class="footer-section">
@@ -150,13 +161,14 @@
           <p class="paragraph-footer">
             Якщо у вас виникають питання – телефонуйте за номером
           </p>
-          <p class="phone-number">0-987-555-321</p>
+          <p class="phone-number">(098) 755 53 21</p>
 
           <img class="icons" src="./images/icon3.png" alt="Логотип Телеграм" />
 
           <img class="icons" src="./images/icon4.png" alt="Логотип Ватсап" />
 
           <p class="paragraph-footer">Або пишіть нам у чат-бот</p>
+          <p class="phone-number">Ray of Hope</p>
         </article>
       </article>
 
@@ -176,12 +188,12 @@
             <input
               type="text"
               placeholder="Ім’я"
-              class="input-news-subscription"
+              class="input-new-subscription"
             />
             <input
               type="text"
               placeholder="Емейл"
-              class="input-news-subscription"
+              class="input-new-subscription"
             />
             <button class="nav-button subscription-button">Підписатися</button>
           </form>

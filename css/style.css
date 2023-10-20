@@ -3,10 +3,11 @@
 :root {
   --brand-color: #7ae5fd;
   --background-color: #fff;
-  --background-blue-color: #f1fdff;
+  --background-blue-color: #e8fafd;
   --background-footer-color: #f9fadf;
-  --font-color: #000;
+  --font-color: #464646;
   --second-font-color: #73a6b1;
+  --active-link-color: blue;
 }
 
 body {
@@ -21,6 +22,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 5vh 5% 5vh 5%;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--background-color);
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -47,6 +54,11 @@ body {
   margin-bottom: auto;
 }
 
+.nav-item:hover {
+  cursor: pointer;
+  color: var(--active-link-color);
+}
+
 .nav-button {
   text-transform: uppercase;
   padding: 1.31em 2.19em 1.31em 2.19em;
@@ -55,16 +67,22 @@ body {
   border: none;
 }
 
+.nav-button:hover {
+  cursor: pointer;
+}
+
 .main-img-section {
   background-image: url(../images/1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: first baseline;
   justify-content: center;
   padding-left: 7.29%;
+  margin-top: 9rem;
 }
 
 .h1-main-section {
@@ -90,6 +108,15 @@ body {
   background-color: var(--background-color);
   border: none;
   border-radius: 10em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.button-main-img-section:hover {
+  cursor: pointer;
 }
 
 .main-description-section {
@@ -171,27 +198,28 @@ body {
 .article-mission {
   width: 86vw;
   background-color: var(--background-blue-color);
-  height: 39vh;
+  min-height: 45vh;
+  height: auto;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .mission-img-first {
-  position: relative;
+  position: absolute;
   left: 45vw;
-  bottom: 58vh;
+  bottom: 0.1vh;
   width: 42vw;
 }
 
 .mission-img-second {
-  position: relative;
-  left: 10vw;
-  bottom: 57vh;
-  width: 31.53vw;
+  position: absolute;
+  left: 50vw;
+  bottom: 0.1vh;
+  width: 30vw;
 }
 
 .mission-description {
-  position: relative;
-  top: 32%;
   font-size: 1.7em;
   width: 36vw;
   margin-left: 4.31vw;
@@ -211,6 +239,7 @@ body {
   letter-spacing: -1.2px;
   text-transform: uppercase;
   margin: 0 0 0.25em 0;
+  text-align: center;
 }
 
 .description-please-support {
@@ -267,11 +296,14 @@ body {
   font-size: 3.75em;
   letter-spacing: -1.2px;
   text-transform: uppercase;
-  margin-top: 6.25vh;
+  word-break: break-all;
+  margin: auto;
+  width: 50%;
 }
 
 .article-contacts {
   margin-top: 6.25vh;
+  width: 50%;
 }
 
 .icons {
@@ -294,18 +326,24 @@ body {
 .footer-subscription {
   background-color: var(--background-color);
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: space-between;
 }
 
 .img-footer {
-  width: 37.57%;
-  height: 43.5vh;
+  max-width: 37.57%;
+  max-height: 43.5vh;
   margin: 10.31vh 6.45% 10.31vh 4.17%;
+}
+
+.email-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .subscribtion {
   width: 50%;
+  padding: 5vh 0 2vh 0;
 }
 
 .subscribe-form {
@@ -317,14 +355,14 @@ body {
 
 .subscribtion-description {
   font-size: 1.69em;
-  margin-top: 7.5vh;
+  /* margin-top: 7.5vh; */
   margin-bottom: 4.8vh;
   width: 65%;
 }
 
-.input-news-subscription {
+.input-new-subscription {
   width: 27.6vw;
-  padding: 1em 2.69em;
+  padding: 1em 2.5vw;
   border-radius: 10em;
   border: none;
   background-color: var(--background-footer-color);
@@ -335,5 +373,97 @@ body {
 .subscription-button {
   padding: 1em 2.69em;
   font-size: 1.125em;
-  width: 34vw;
+  width: 32.6vw;
+}
+
+.support-section {
+  margin-top: 9rem;
+  background-color: var(--background-blue-color);
+  min-height: 60vh;
+  padding: 2vh 4.93%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.h3-support {
+  text-align: left;
+  margin: 5vh 0 0 0;
+  width: 80%;
+}
+
+.paragraph-support {
+  width: 100%;
+  font-size: 1.25em;
+  margin: 0.56em 0 0 0;
+}
+
+.support-contacts {
+  margin-top: 6.25vh;
+  width: 80%;
+}
+
+.input-support {
+  background-color: var(--background-color);
+}
+
+.input-area {
+  background-color: var(--background-color);
+  height: 20vh;
+  border-radius: 2rem;
+  width: 27.6vw;
+  padding: 1em 2.5vw;
+  border: none;
+  margin-bottom: 3.88vh;
+  font-size: 1.6em;
+}
+
+/* .subscribtion-support{
+  padding-top: 0;
+} */
+
+.not-visible {
+  visibility: hidden;
+}
+
+.office-item {
+  margin-top: 5vh;
+}
+
+.office-local {
+  font-weight: 600;
+}
+
+.help-img-section {
+  background-image: url(../images/1-1.png);
+  background-position: center right;
+  min-height: 82vh;
+  height: auto;
+  padding-bottom: 2em;
+}
+
+.h3-help-section {
+  font-weight: 600;
+  width: 70%;
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+}
+
+.description-help {
+  width: 90%;
+  margin-bottom: 0.7em;
+}
+
+.button-goal {
+  margin-top: 2em;
+}
+
+.h3-goal {
+  text-transform: lowercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.h3-goal::first-letter {
+  text-transform: uppercase;
 }
