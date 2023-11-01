@@ -768,6 +768,7 @@ a {
     padding: 4vh 4%;
   }
   .article-mission {
+    min-height: 58vh;
     flex-direction: column;
   }
   .mission-description {
