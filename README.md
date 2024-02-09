@@ -10,6 +10,6 @@
 ![Contacts](./assets/screenshot-3.jpg)
 ![Our help](./assets/screenshot-4.jpg)
 
-<p>Adaptation of the application for small devices</p>
+<h3>Adaptation of the application for small devices</h3>
 
 ![Small devices](./assets/screenshot-5.jpg)
