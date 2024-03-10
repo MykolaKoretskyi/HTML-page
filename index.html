@@ -210,19 +210,39 @@
           </p>
           <form class="subscribe-form">
             <input
+              id="name-input"
               type="text"
               placeholder="Ім’я"
               class="input-new-subscription"
             />
             <input
+              id="email-input"
               type="text"
               placeholder="Емейл"
               class="input-new-subscription"
             />
-            <button class="nav-button subscription-button">Підписатися</button>
+            <button
+              class="nav-button subscription-button"
+              onclick="sendEmail(event)"
+            >
+              Підписатися
+            </button>
           </form>
         </article>
       </article>
     </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "vV6KRR9shpdmH7I0B",
+        });
+      })();
+    </script>
+
+    <script src="scripts/scriptInputs.js"></script>
   </body>
 </html>

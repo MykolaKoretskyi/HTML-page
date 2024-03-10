@@ -75,23 +75,45 @@
         </p>
         <form class="subscribe-form">
           <input
+            id="name-input"
             type="text"
             placeholder="Ім’я"
             class="input-new-subscription input-support"
           />
           <input
+            id="email-input"
             type="text"
-            placeholder="Емейл"
+            placeholder="Імейл"
             class="input-new-subscription input-support"
           />
           <textarea
+            id="text-area"
             type="text"
             placeholder="Ваше звернення"
             class="input-area"
           ></textarea>
-          <button class="nav-button subscription-button">Надіслати</button>
+          <button
+            class="nav-button subscription-button"
+            onclick="sendEmail(event)"
+          >
+            Надіслати
+          </button>
         </form>
       </article>
     </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "vV6KRR9shpdmH7I0B",
+        });
+      })();
+    </script>
+
+    <script src="scripts/scriptInputs.js"></script>
   </body>
 </html>
